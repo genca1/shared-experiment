@@ -6,7 +6,6 @@ def call() {
          arr[5] = 5;
       } catch(Exception ex) {
          echo ":.. Echo message..: "
-         echo ex.getMessage
          buildResult = currentBuild.result
          currentBuild.result = "UNSTABLE"
       }
