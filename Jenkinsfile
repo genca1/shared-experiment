@@ -25,6 +25,12 @@ pipeline {
                     unstablizer()
                 }
         }
+        
+        stage ('try catch') {
+            steps {
+                    try_catch()
+                }
+        }
  
     }
 }
