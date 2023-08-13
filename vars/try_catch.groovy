@@ -6,6 +6,7 @@ def call() {
          arr[5] = 5;
       } catch(Exception ex) {
          echo ":.. Echo message..: "
+         echo ex.printStackTrace()
          buildResult = currentBuild.result
          currentBuild.result = "UNSTABLE"
       }
