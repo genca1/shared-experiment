@@ -17,5 +17,13 @@ pipeline {
                 }
             }
         }
+         stage ('Condition') {
+            steps {
+                // log.info 'Starting' 
+                script { 
+                    condition(env.BRANCH_NAME)
+                }
+            }
+        }
     }
 }
