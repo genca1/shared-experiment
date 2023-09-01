@@ -1,8 +1,7 @@
 #!/usr/bin/env groovy
 
 def call(String name = 'human') {
-    pipeline { 
-        agent any 
+    script {
         stages {
             stage('Echo-name') {
                 steps {
@@ -17,4 +16,5 @@ def call(String name = 'human') {
         }
     }
 }
+
 
