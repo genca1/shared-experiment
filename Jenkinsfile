@@ -31,6 +31,10 @@ pipeline {
                     try_catch()
                 }
         }
+
+        stage('stage within another') {
+            newStepStage()
+        }
  
     }
 }
