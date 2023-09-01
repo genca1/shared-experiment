@@ -32,8 +32,10 @@ pipeline {
                 }
         }
 
-        stage('stage within another') {
-            newStepStage()
+        stage ('stage within another') {
+            steps {
+                newStepStage()
+            }
         }
  
     }
