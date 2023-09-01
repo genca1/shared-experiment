@@ -33,6 +33,12 @@ pipeline {
                 try_catch()
             }
         }
+
+        stage ('pipe see') {
+            steps {
+                pipe('deniz....')
+            }
+        }
  
     }
 }
