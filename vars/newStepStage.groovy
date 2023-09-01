@@ -2,6 +2,7 @@
 
 def call(def branch) {
     return {
+        echo "before join"
         stage('staaaaage') {
             echo "new new"
             echo "New stage ${branch}"
