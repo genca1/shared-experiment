@@ -16,4 +16,5 @@ def call(def branch) {
             }
         }
     }
+}
 
