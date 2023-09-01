@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-def call(def branch) {
+def call() {
     return {
         echo "before join"
         stage('staaaaage') {
