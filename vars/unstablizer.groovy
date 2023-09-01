@@ -2,7 +2,7 @@
 
 def call() {
   echo "destabilazing the middle east..."
-  //buildResult = currentBuild.result
+  buildResult = currentBuild.result
   stageResult.result = "UNSTABLE"
 }
 
