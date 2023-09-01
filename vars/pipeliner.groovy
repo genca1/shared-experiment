@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 
 def call(String name = 'human') {
-    agent none
+    agent any
     pipeline {  
         stages {
             stage('Echo-name') {
