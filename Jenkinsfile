@@ -26,12 +26,6 @@ pipeline {
                 }
         }
         
-        stage ('try catch') {
-            steps {
-                    try_catch()
-                }
-        }
-
         stage ('stage within another') {
             steps {
                 newStepStage()

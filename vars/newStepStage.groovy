@@ -3,6 +3,7 @@
 def call(def branch) {
     return {
         stage('staaaaage') {
+            echo "new new"
             echo "New stage ${branch}"
             when{
                 anyOf {
