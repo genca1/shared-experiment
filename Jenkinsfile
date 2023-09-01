@@ -20,12 +20,7 @@ pipeline {
                 }
             }
         }
-        stage ('destable') {
-            steps {
-                    unstablizer()
-                }
-        }
-        
+                
         stage ('stage within another') {
             steps {
                 newStepStage()
