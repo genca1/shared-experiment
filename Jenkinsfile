@@ -20,10 +20,17 @@ pipeline {
                 }
             }
         }
-                
-        stage ('stage within another') {
+
+        stage ('destablize') {
             steps {
-                newStepStage()
+                unstablizer()
+            }
+        }
+                
+        stage ('try catch') {
+            steps {
+                
+                try_catch()
             }
         }
  
