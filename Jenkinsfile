@@ -1,5 +1,5 @@
 pipeline {
-    agent none
+    agent any
     stages {
         stage ('Example') {
             steps {
@@ -36,7 +36,7 @@ pipeline {
 
         stage ('pipe see') {
             steps {
-                pipe('deniz....')
+                pipeliner('deniz')
             }
         }
  
