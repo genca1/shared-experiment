@@ -20,12 +20,13 @@ pipeline {
                 }
             }
         }
-
+        /*
         stage ('destablize') {
             steps {
                 unstablizer()
             }
         }
+        */
                 
         stage ('try catch') {
             steps {
@@ -37,6 +38,13 @@ pipeline {
          stage ('commands') {
             steps {
                 commandRun('ls')
+            }
+        }
+
+        stage ('looops') {
+            steps {
+                def map = [Io: 1, Europa: 2, Ganymed: 3];
+                looops(map)
             }
         }
  
