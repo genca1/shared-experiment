@@ -43,8 +43,10 @@ pipeline {
 
         stage ('looops') {
             steps {
+                script {
                 def map = [Io: 1, Europa: 2, Ganymed: 3];
                 looops(map)
+                }
             }
         }
  
