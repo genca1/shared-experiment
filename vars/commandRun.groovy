@@ -1,6 +1,6 @@
 def call(def command) {
     String ab = 'AAA';
 
-    echo ${ab};
+    echo "booom ${ab}";
     echo runner(command)
 }
