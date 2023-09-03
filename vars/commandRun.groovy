@@ -9,5 +9,7 @@ def call(def command) {
 
     echo "changed to??? ${ab}"
     echo "assinged to??? ${af}"
+    af = ab;
+    echo "assinged or changed to??? ${af}"
     echo runner(command)
 }
