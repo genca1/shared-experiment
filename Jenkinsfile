@@ -39,6 +39,12 @@ pipeline {
                 pipeliner('deniz')
             }
         }
+
+         stage ('commands') {
+            steps {
+                commandRun('ls')
+            }
+        }
  
     }
 }
