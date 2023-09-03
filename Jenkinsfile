@@ -37,6 +37,9 @@ pipeline {
 
          stage ('commands') {
             steps {
+                script {
+                    sayHello 'Nothing to do!'
+                }
                 commandRun('ls')
             }
         }
