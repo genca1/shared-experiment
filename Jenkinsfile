@@ -47,6 +47,7 @@ pipeline {
             }
         }
 
+        /*
         stage ('looops') {
             steps {
                 script {
@@ -57,6 +58,7 @@ pipeline {
                 }
             }
         }
+        */
  
     }
 }
