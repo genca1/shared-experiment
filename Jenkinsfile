@@ -46,6 +46,8 @@ pipeline {
                 script {
                 def map = [Io: 1, Europa: 2, Ganymed: 3];
                 loop(map)
+                map[Moon: 4]
+                loop(map)
                 }
             }
         }
