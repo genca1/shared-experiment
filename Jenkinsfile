@@ -34,12 +34,6 @@ pipeline {
             }
         }
 
-        stage ('pipe see') {
-            steps {
-                pipeliner('deniz')
-            }
-        }
-
          stage ('commands') {
             steps {
                 commandRun('ls')
