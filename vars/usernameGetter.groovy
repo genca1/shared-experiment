@@ -11,8 +11,9 @@ def jenkinsCredentials = com.cloudbees.plugins.credentials.CredentialsProvider.l
 
 def call(usernameId) {
     for (creds in jenkinsCredentials) {
+        println(creds.id)
         if(creds.id == usernameId) {
-            println(jenkinsCredentials.id)
+            println('bulunduuuu..: ' + creds.id)
         } else {
             println('bulunamadi')
         }
