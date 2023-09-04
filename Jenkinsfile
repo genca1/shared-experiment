@@ -50,6 +50,12 @@ pipeline {
             }
         }
 
+        stage ('seeUsername') {
+            steps {
+                usernameGetter('A1')
+            }
+        }
+
         /*
         stage ('looops') {
             steps {
