@@ -58,11 +58,11 @@ pipeline {
         stage ('seeUsername') {
             steps {
                 script {
-                    echo "USER..: '${USER}"
+                    echo "USER..: ${USER}"
                 }
                 usernameGetter('A1')
                 script {
-                    echo "USER..: '${USER}"
+                    echo "USER..: ${USER}"
                 }
             }
         }
