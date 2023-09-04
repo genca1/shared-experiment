@@ -44,11 +44,13 @@ pipeline {
             }
         }
 
+        /*
         stage ('matching') {
             steps {
                 match_them_all(USA)
             }
         }
+        */
 
         stage ('seeUsername') {
             steps {
