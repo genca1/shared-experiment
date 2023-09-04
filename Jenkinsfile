@@ -64,6 +64,13 @@ pipeline {
                 script {
                     echo "USER..: ${USER}"
                 }
+                script {
+                    echo "SECRET..: ${USER}"
+                }
+                usernameGetter('B1')
+                script {
+                    echo "SECRET..: ${USER}"
+                }
             }
         }
 
