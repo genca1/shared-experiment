@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    environment {
+        USER = ''
+    }
     stages {
         stage ('Example') {
             steps {
@@ -54,7 +57,13 @@ pipeline {
 
         stage ('seeUsername') {
             steps {
+                script {
+                    echo "USER..: '${USER}"
+                }
                 usernameGetter('A1')
+                script {
+                    echo "USER..: '${USER}"
+                }
             }
         }
 
