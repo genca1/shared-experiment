@@ -65,11 +65,18 @@ pipeline {
                     script {
                         echo "USER..: ${USER}"
                     }
+                    script {
+                        echo "SECRET..: ${USER}"
+                    }
+                        secretCred('B1')
+                    script {
+                        echo "SECRET..: ${USER}"
+                    }
                 */
                 script {
                     echo "SECRET..: ${USER}"
                 }
-                    secretCred('B1')
+                credentialsLoop()
                 script {
                     echo "SECRET..: ${USER}"
                 }
