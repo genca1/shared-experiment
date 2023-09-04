@@ -57,22 +57,22 @@ pipeline {
 
         stage ('seeUsername') {
             steps {
-                /*
-                    script {
-                        echo "USER..: ${USER}"
-                    }
-                    usernameGetter('A1')
-                    script {
-                        echo "USER..: ${USER}"
-                    }
-                    script {
-                        echo "SECRET..: ${USER}"
-                    }
-                        secretCred('B1')
-                    script {
-                        echo "SECRET..: ${USER}"
-                    }
-                */
+                
+                script {
+                    echo "USER..: ${USER}"
+                }
+                secretCred('A1')
+                script {
+                    echo "USER..: ${USER}"
+                }
+            
+                script {
+                    echo "SECRET..: ${USER}"
+                }
+                    secretCred('B1')
+                script {
+                    echo "SECRET..: ${USER}"
+                }
                 script {
                     echo "SECRET..: ${USER}"
                 }
